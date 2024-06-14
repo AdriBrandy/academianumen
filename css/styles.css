@@ -42,13 +42,22 @@ section ul,section h5 {
 
 }
 
-video {
-    width: 340px;
-    height: 560px;
+.videos {
+    width: 30rem;
+    height: 30rem;
     grid-column: 2/3;
     display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
+.videos video{
+    min-width: 30rem;
+    min-height: 30rem;
+    object-fit: cover;
+    background-position: center;
+
+}
 
 /* -----------Cards de los sections...... */
 .card-presentation {

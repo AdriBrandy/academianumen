@@ -167,7 +167,7 @@ main{
 @media (max-width:576px) {
     nav{
         display: grid;
-        flex-direction: column;
+        flex-direction: column;  
     }
     .contenedor{
         grid-template-columns: 1fr;
@@ -177,17 +177,30 @@ main{
         grid-column: 1/2;
        
     }
-    main,section{
+    .hero{
+        flex-grow: 1;
+        max-width: 100vh;
+        display: grid;
+        grid-column: 1/2;
+    }
+    main,section {
         display: grid;
         grid-column: 1/2;
         min-width: 100%;
         flex-grow: auto;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .imagen-items, .imagen-items img{
         max-width: 90%;
         max-height: 90%;
+    }
+    .videos, .videos video{
+        min-width: 90%;
+        min-height: 90%;
+        flex-grow: -1;
     }
     .item1,.item2,.item3,.item4,.item5{
         min-width: 100%;
@@ -195,10 +208,10 @@ main{
         flex-grow: 0;
 
     }
-
     footer{
         flex-grow: 0;
         justify-content: space-between;   
         min-width: 100%;     
     }
+    
 }
