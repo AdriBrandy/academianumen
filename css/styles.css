@@ -1,13 +1,13 @@
 
 /* Diferentes imagenes para los banner segun pagina */
 #cursos {
-    background-image: url(../academianumen/Media/Portadas/cursos-portada.jpg);
+    background-image: url(../Media/Portadas/cursos-portada.jpg);
 }
 #nosotros {
-    background-image: url(../academianumen/Media/Portadas/portada-quienes-somos.jpg);
+    background-image: url(../Media/Portadas/portada-quienes-somos.jpg);
 }
 #recetas {
-    background-image: url(../academianumen/Media/Portadas/recetario-portada.jpeg);
+    background-image: url(../Media/Portadas/recetario-portada.jpeg);
 }
 
 /* MAIN */
