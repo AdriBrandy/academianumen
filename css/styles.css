@@ -1,0 +1,132 @@
+
+/* Diferentes imagenes para los banner segun pagina */
+#cursos {
+    background-image: url(/Media/Portadas/cursos-portada.jpg);
+}
+#nosotros {
+    background-image: url(/Media/Portadas/portada-quienes-somos.jpg);
+}
+#recetas {
+    background-image: url(/Media/Portadas/recetario-portada.jpeg);
+}
+
+/* MAIN */
+section {
+    min-width: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    align-items: center;
+}
+section ul,section h5 {
+    list-style: none;
+    padding-bottom: .5rem;
+}
+
+/* ----------Imágenes y videos de los section... */
+.imagen-items {
+    grid-column: 2/3;
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+    
+}
+
+.imagen-items img {
+    max-width: 30rem;
+    max-height: 30rem;
+    object-fit: cover;
+    background-position: center;
+
+}
+
+video {
+    width: 340px;
+    height: 560px;
+    grid-column: 2/3;
+    display: grid;
+}
+
+
+/* -----------Cards de los sections...... */
+.card-presentation {
+    background-color: #eae7e7;
+    border-color: #ffffff;
+    margin: 5rem;
+    max-height: 100vh;
+    max-width: 40vh;
+    padding: 1.5rem;
+    display: grid;
+    gap: .5rem;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font: 20px;
+}
+
+.titulo h2 {
+    font-size: 1.7rem;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+/* Diferentes colores de sections */
+.item1 {
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 2/3;
+}
+
+.item2 {
+    background-color: #dedede;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 3/4;
+}
+
+.item3 {
+    background-color: #b5acac;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 4/5;
+}
+
+.item4 {
+    background-color: #998c8c;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 5/6;
+
+}
+
+.item5 {
+    background-color: rgb(88, 84, 84);
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 6/7;
+}
+
+/*----FOOTER----STILL "MOCHO" */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #252627;
+    color: #ffffff;
+    min-width: 100vh;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-row: 7/8;
+}
