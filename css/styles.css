@@ -13,12 +13,37 @@
 /* MAIN */
 section {
     min-width: 100vh;
-    max-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: flex;
     margin-bottom: .5rem;
     align-items: center;
+}
+@media (max-width: 576px) {
+    .contenedor{
+        min-width: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    main{
+        display: flex;
+        max-width: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: .5;
+        grid-column: 1/2;
+    }
+    .hero{
+        grid-column: 1/2;
+        display: flex;
+    }
+    section{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 section ul,section h5 {
     list-style: none;
