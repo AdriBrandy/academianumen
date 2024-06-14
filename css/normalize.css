@@ -200,7 +200,7 @@ main{
     .videos, .videos video{
         min-width: 90%;
         min-height: 90%;
-        flex-grow: -1;
+        flex-grow: 0;
     }
     .item1,.item2,.item3,.item4,.item5{
         min-width: 100%;
