@@ -18,6 +18,9 @@ section {
     flex-direction: flex;
     margin-bottom: .5rem;
     align-items: center;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 section ul,section h5 {
@@ -89,28 +92,28 @@ section ul,section h5 {
 
 /* Diferentes colores de sections */
 .item1 {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(to bottom, #f4f4f4 12%, #dedede 75%);;
     align-items: center;
     justify-content: space-between;
     grid-row: 2/3;
 }
 
 .item2 {
-    background-color: #dedede;
+    background-image: linear-gradient(to bottom, #dedede 21%, #b5acac 92%);
     align-items: center;
     justify-content: space-between;
     grid-row: 3/4;
 }
 
 .item3 {
-    background-color: #b5acac;
+    background-image: linear-gradient(to bottom, #b5acac 14%, #998c8c 54%);
     align-items: center;
     justify-content: space-between;
     grid-row: 4/5;
 }
 
 .item4 {
-    background-color: #998c8c;
+    background-image: linear-gradient(to bottom, #998c8c 37%, #585454 84%);
     align-items: center;
     justify-content: space-between;
     grid-row: 5/6;
@@ -118,7 +121,7 @@ section ul,section h5 {
 }
 
 .item5 {
-    background-color: rgb(88, 84, 84);
+    background-image: linear-gradient(to bottom, #585454 57%, #312f2f 88%);
     align-items: center;
     justify-content: space-between;
     grid-row: 6/7;
