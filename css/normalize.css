@@ -17,6 +17,7 @@ body {
 }
 
 header {
+    grid-column: 1/4;
     background: rgba(255, 255, 255, 0);
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
@@ -32,6 +33,7 @@ header:hover {
 }
 
 nav {
+    grid-column: 1/4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,38 +129,23 @@ nav {
 /*---------------MAIN------------- */
 main{
     grid-column: 1/4;
+    grid-row: auto;
 }
-@media (max-width: 768px){
-    .contenedor{
-        grid-template-columns: 1fr;
-    }
-    header{
-        font-size: 16px;
-        grid-column: 1/2; 
-       
-    }
-    .hero{
-        flex-grow: 0;
-        max-width: 100%;
-        display: grid;
-        grid-column: 1/2;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {
   
-    main,section{
+  
+    main{
         display: grid;
-        grid-column: 1/2;
         min-width: 100%;
-        flex-grow: auto;
         flex-wrap: wrap;
         flex-direction: column;
+        
+       
     }
     .item1,.item2,.item3,.item4,.item5{
         min-width: 100%;
         display: flex;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-
+        flex-flow: column;
     }
     footer{
         flex-grow: 1;
@@ -168,55 +155,23 @@ main{
 }
 
 @media (max-width:576px) {
-    nav{
+     main{
         display: grid;
-        flex-direction: column;  
-    }
-    .contenedor{
-        grid-template-columns: 1fr;
-    }
-    header{
-        font-size: 16px;
-        grid-column: 1/2;
-       
-    }
-    .hero{
-        flex-grow: 1;
-        max-width: 100vh;
-        display: grid;
-        grid-column: 1/2;
-    }
-    main,section {
-        display: grid;
-        grid-column: 1/2;
         min-width: 100%;
-        flex-grow: auto;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         
-    }
-    .imagen-items, .imagen-items img{
-        max-width: 90%;
-        max-height: 90%;
-        
-    }
-    .videos, .videos video{
-        min-width: 90%;
-        min-height: 90%;
-        flex-grow: 0;
+       
     }
     .item1,.item2,.item3,.item4,.item5{
         min-width: 100%;
         display: flex;
-        flex-grow: 0;      
-
+        flex-flow: column;
     }
     footer{
-        flex-grow: 0;
+        flex-grow: 1;
         justify-content: space-between;   
         min-width: 100%;     
     }
     
-}
+} 
