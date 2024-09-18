@@ -7,7 +7,7 @@
 /* CONTENEDOR */
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: repeat(8, 1fr); */
 }
 /* HEADER y NAV */
@@ -17,7 +17,8 @@ body {
 }
 
 header {
-    grid-column: 1/4;
+    grid-column: 1/5;
+    /* grid-row: 1/1; */
     background: rgba(255, 255, 255, 0);
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
@@ -33,7 +34,8 @@ header:hover {
 }
 
 nav {
-    grid-column: 1/4;
+    grid-column: 1/5;
+    /* grid-row: 1/2; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +81,7 @@ nav {
     text-align: center;
     position: relative;
     z-index: 1;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
     font-family: "EB Garamond";
 }
@@ -128,7 +130,7 @@ nav {
 
 /*---------------MAIN------------- */
 main{
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: auto;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
